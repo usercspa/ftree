@@ -1,11 +1,10 @@
 import React from 'react'
-import "./styles.css"
-import HomeBackground from './images/home.png'
+import TreeBg3 from './images/tree3.png'
 
-export default function Home3() {
+export default function TellSecret3() {
     return (
         <div className="imgbg" style={{
-            backgroundImage: `url(${HomeBackground})`,
+            backgroundImage: `url(${TreeBg3})`,
             backgroundSize: 'cover'
         }}>
             

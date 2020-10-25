@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, Route } from "react-router-dom";
 import "./App.css";
 import Home2 from "./pages/Home2/Home2";
+import Home3 from "./pages/Home3/Home3";
 // import Home from "./pages/home/home";
 
 // import Logo from "./logo.png"
@@ -48,15 +49,8 @@ function App() {
       </div>
       <div>
         <Route exact path="/Home2" component={Home2}/>
-        {/* <Header /> */}
-        {/* <Route exact path='/' component={Home}/>
-        <Route exact path="/inventory" component={Inventory}/>
-        <Route exact path='/receipt' component={Receipt}/> */}
-        {/* <Route exact path='/' component={Landing} />
-      <Route exact path='/register' component={Register} /> */}
-        {/* <Bottom /> */}
-        {/* <Route exact path="/" component={Landing} /> */}
-
+        <Route exact path="/Home3" component={Home3}/>
+        
       </div>
 
       <div className="navbar-fixed navbar-bottom navv">

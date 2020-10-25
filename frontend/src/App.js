@@ -3,8 +3,12 @@ import React, { Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Route } from "react-router-dom";
 import "./App.css";
+import CalmDown from "./pages/CalmDown/CalmDown";
 import Home2 from "./pages/Home2/Home2";
 import Home3 from "./pages/Home3/Home3";
+import TellSecret1 from "./pages/TellSecret/TellSecret1";
+import TellSecret2 from "./pages/TellSecret/TellSecret2";
+import TellSecret3 from "./pages/TellSecret/TellSecret3";
 // import Home from "./pages/home/home";
 
 // import Logo from "./logo.png"
@@ -15,7 +19,6 @@ function App() {
 
   return (
     <Fragment>
-      <div style={{height: '30px'}}></div>
       <div className="root navbar-fixed navbar-top">
         <nav className="white">
           <div class="nav-wrapper">
@@ -51,9 +54,15 @@ function App() {
         <Route exact path="/Home2" component={Home2}/>
         <Route exact path="/Home3" component={Home3}/>
         
+        <Route exact path="/TellSecret1" component={TellSecret1}/>
+        <Route exact path="/TellSecret2" component={TellSecret2}/>
+        <Route exact path="/TellSecret3" component={TellSecret3}/>
+
+        <Route exact path="/calmdown" component={CalmDown}/>
+
       </div>
 
-      <div className="navbar-fixed navbar-bottom navv">
+      {/* <div className="navbar-fixed navbar-bottom navv">
         <nav className="black">
           <div class="nav-wrapper">
             <ul class="center">
@@ -92,7 +101,7 @@ function App() {
             </ul>
           </div>
         </nav>
-      </div>
+      </div> */}
     </Fragment>
   );
 }

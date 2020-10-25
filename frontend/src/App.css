@@ -1,3 +1,11 @@
+.root {
+  background-color: #686d75;
+}
+
+p {
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -15,7 +23,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +43,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav {
+  width: 100%;
+}
+
+.chat {
+  position: fixed;
+  bottom: 63px;
+}
+
+.chat-wrapper {
+  padding-bottom: 63px;
+  margin-bottom: 63px;
 }
